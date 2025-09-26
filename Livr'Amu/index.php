@@ -1,3 +1,19 @@
+<?php
+// 1. Démarrer/Reprendre la session. C'est le point de départ pour utiliser $_SESSION.
+session_start();
+
+// 2. Vérifier si l'utilisateur est bien connecté.
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
+    // Si la session n'existe pas, ou si la variable 'loggedin' est fausse,
+    // on redirige immédiatement l'utilisateur vers la page de connexion.
+    header("Location: login.html");
+    exit; // Toujours mettre exit() après une redirection pour arrêter l'exécution du script.
+}
+
+// Facultatif : Récupérer le nom d'utilisateur pour personnaliser la page
+$username = htmlspecialchars($_SESSION['username']); 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +36,7 @@
         </nav>
 
         <div class="user-area">
-            <a href="login.html" class="login-link">Connexion</a>
+            <a href="login.html" class="login-link"> <?php echo htmlspecialchars($username); ?></a>
             <div class="user-avatar"></div>
         </div>
     </header>

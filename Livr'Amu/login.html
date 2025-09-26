@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion a Eco'livre</title>
+    <link rel="stylesheet" href="login.css"> 
+</head>
+<body>
+
+    <div class="conteneur-connexion"> 
+
+        <h2>Connexion Utilisateur</h2>
+
+        <form action="authenticate.php" method="POST">
+            <div>
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Se connecter</button>
+            </div>
+        </form>
+
+    </div> </body>
+</html>
