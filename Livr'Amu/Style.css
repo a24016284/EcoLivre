@@ -121,23 +121,259 @@ body {
 }
 
 .book-card {
-  
     text-align: center;
 }
 
 .card-cover {
-    width: 80%; 
+    width: 70%; 
     height: 418px;
     background: #D9D9D9;
     border-radius: 19px;
     margin-bottom: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; 
 }
-
 
 .card-title {
     color: black;
-    font-size: 48px;
+    font-size: 38px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     margin: 0;
+}
+
+
+/* * Section "À propos" */
+.a_propos{
+    width: 100%;
+    /* J'ai ajusté le padding pour un espacement plus général */
+    padding: 40px; 
+    box-sizing: border-box;
+    /* La hauteur est rendue flexible pour s'adapter au contenu */
+    /* height: 713px; <-- Code original, non recommandé pour le responsive */
+}
+
+.about-section .section-title {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* J'ai centré le titre pour une meilleure mise en page */
+    text-align: center; 
+}
+
+/* * Conteneur du contenu principal (image + texte) */
+.content-wrapper {
+    display: flex; /* Active Flexbox pour aligner les enfants (zone visuelle et zone de texte) */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 50px; /* Ajoute un espace entre les deux colonnes (visuel et texte) */
+}
+
+/* * Conteneur de la zone visuelle (image + flèches) */
+.visual-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* * Style de la zone de l'image (le bloc gris) */
+.image-placeholder {
+    width: 699px;
+    height: 567px;
+    background: #D9D9D9;
+    border-radius: 19px;
+}
+
+/* * Style des flèches */
+.arrow {
+    font-size: 64px;
+    color: black;
+    cursor: pointer; /* Indique qu'elles sont cliquables */
+}
+
+/* * Style de la zone de texte */
+.text-area {
+    max-width: 1014px; /* Limite la largeur du texte pour la lisibilité */
+}
+
+.text-area p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5; /* Ajoute de l'espace entre les lignes pour une meilleure lecture */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* * 1. Le conteneur principal du carrousel */
+#slider {
+    width: 80%; /* Le carrousel prend 80% de la largeur de la page */
+    max-width: 900px; /* Largeur maximale pour les grands écrans */
+    height: 400px; /* Hauteur fixe pour le carrousel */
+    margin: 50px auto; /* Centre le carrousel horizontalement avec une marge de 50px en haut/bas */
+    overflow: hidden; /* C'est TRÈS important ! Ça cache les images qui ne sont pas visibles. */
+    position: relative;
+    border-radius: 10px; /* Bords arrondis pour un look plus doux */
+}
+
+/* * 2. Le conteneur des images (qui va glisser) */
+#slider figure {
+    position: relative;
+    width: 300%; /* Important ! C'est la largeur de toutes les images côte à côte (3 images * 100%) */
+    height: 100%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    animation: 10s slider infinite; 
+}
+
+/* * 3. Les images à l'intérieur de la figure */
+#slider figure img {
+    width: 33.33%; /* Chaque image prend un tiers de la largeur du conteneur figure */
+    height: 100%;
+    float: left; /* Les images s'alignent sur la même ligne */
+    object-fit: cover; /* L'image remplit la zone sans se déformer */
+}
+
+@keyframes slider {
+    0% { left: 0; }
+    30% { left: 0; }
+    35% { left: -100%; } 
+    65% { left: -100%; }
+    70% { left: -200%; } 
+    95% { left: -200%; }
+    100% { left: 0; } 
+}
+
+.bestseller-section {
+    width: 100%;
+    padding: 40px; 
+    box-sizing: border-box; 
+}
+
+.book-card-first {
+    text-align: center;
+}
+
+.card-cover-first {
+    width: 90%; 
+    height: 518px;
+    background: #D9D9D9;
+    border-radius: 19px;
+    margin-bottom: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; 
+}
+
+.card-title-first {
+    color: black;
+    font-size: 38px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card-cover img, .card-cover-first img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 19px;
+}
+
+/* * Section "À propos" */
+.Nos_Locaux{
+    width: 100%;
+    /* J'ai ajusté le padding pour un espacement plus général */
+    padding: 40px; 
+    box-sizing: border-box;
+    /* La hauteur est rendue flexible pour s'adapter au contenu */
+    /* height: 713px; <-- Code original, non recommandé pour le responsive */
+}
+
+/* * 1. Conteneur principal de la section CTA */
+.cta-section {
+    width: 100%;
+    /* J'utilise un padding en haut pour l'espace du titre et sur les côtés */
+    padding: 0 40px 40px 40px; 
+    box-sizing: border-box;
+    /* J'ai supprimé la hauteur fixe (811px) pour que la section s'adapte au contenu */
+}
+
+/* * 2. Le titre principal de la section */
+.cta-section .section-title {
+    color: black;
+    font-size: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-align: center; /* Centre le titre */
+    margin-top: 0; 
+    margin-bottom: 50px; /* Espace sous le titre */
+}
+
+/* * 3. Conteneur pour aligner le bloc visuel et le texte promo côte à côte */
+.cta-content-wrapper {
+    display: flex; 
+    align-items: flex-start; /* Alignement en haut */
+    justify-content: center; /* Centre les deux colonnes */
+    gap: 80px; /* Espace entre le bloc visuel et le texte */
+}
+
+/* * 4. Le grand bloc gris (placeholder) */
+.visual-placeholder {
+    width: 662px;
+    height: 648px;
+    background: #D9D9D9;
+    border-radius: 19px;
+}
+
+/* * 5. Le conteneur de droite (promo de l'appli) */
+.app-promo-area {
+    /* Utilise Flexbox pour aligner le texte et l'image (l'un sous l'autre) */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Centre le texte et l'image */
+    padding-top: 292px; /* Espacement pour remonter le texte pour l'aligner à la maquette */
+    position: relative; /* Nécessaire pour positionner l'image si besoin */
+}
+
+/* * 6. Le texte d'appel à l'action */
+.app-text {
+    color: black;
+    font-size: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* * 7. L'image de promotion avec la transformation */
+.promo-image {
+    width: 354px;
+    height: 354px;
+    /* 💥 Transformation appliquée ! 💥 */
+    /* rotate(-156deg) = rotation pour reproduire l'inclinaison de la maquette */
+    transform: rotate(-156deg); 
+    /* Positionnement relatif pour éviter l'absolu complexe du code d'origine,
+       et j'utilise 'margin-top' pour simuler la position basse */
+    margin-top: 50px;
+}
+
+/* * Style de l'image à l'intérieur du grand bloc visuel */
+.visual-placeholder {
+    /* ... (les propriétés existantes sont ici, comme width, height, background, border-radius) ... */
+    
+    /* 💥 NOUVEAUTÉ : Nécessaire pour s'assurer que l'image ne dépasse pas. */
+    overflow: hidden; 
+}
+
+.visual-placeholder .visual-image {
+    /* L'image prend toute la largeur et la hauteur de son conteneur. */
+    width: 100%; 
+    height: 100%; 
+    
+    /* S'assure que l'image couvre parfaitement l'espace, même si une partie est coupée. */
+    object-fit: cover; 
+    
+    /* Assure que l'image a les mêmes bords arrondis que son conteneur. */
+    border-radius: 19px;
 }
