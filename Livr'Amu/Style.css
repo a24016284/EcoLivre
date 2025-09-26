@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    /* La police que nous avons importée en HTML */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.navbar-container {
+    width: 100%; /* S'étend sur toute la largeur de l'écran */
+    height: 100px;
+    position: relative;
+    display: flex; /* Active le Flexbox */
+    align-items: center; /* Centre verticalement les éléments enfants (logo, liens, etc.) */
+    justify-content: space-between; /* Écarte les groupes d'éléments (liens | logo | connexion) */
+    padding: 0 50px; /* Ajoute un espace sur les côtés pour que les éléments ne touchent pas le bord */
+    box-sizing: border-box; /* Assure que le padding est inclus dans le width/height */
+}
+
+.navbar-background {
+    position: absolute;
+    width: calc(100% - 42px); /* 100% moins la marge de chaque côté */
+    height: 60px;
+    top: 20px;
+    left: 21px;
+    background: #D9D9D9;
+    border-radius: 19px;
+    z-index: -1; /* Place le fond derrière les autres éléments (texte, liens) */
+}
+
+
+.logo {
+    font-size: 45px;
+    font-weight: 400;
+    color: black;
+    margin: 0; /* Supprime la marge par défaut des h1 */
+    /* Pour le centrer au milieu de la nav grâce au Flexbox */
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links ul {
+    list-style: none; /* Supprime les points des listes */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Met les liens en ligne */
+    gap: 30px; /* Ajoute de l'espace entre les liens */
+    margin-right: 200px; /* Déplace le groupe de liens un peu plus à gauche pour ressembler à l'original */
+}
+
+.nav-links a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.user-area {
+    display: flex; /* Met Connexion et l'Avatar en ligne */
+    align-items: center;
+    gap: 20px; /* Espace entre le texte "Connexion" et l'avatar */
+}
+
+.login-link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.user-avatar {
+    width: 47px;
+    height: 44px;
+    background: #D61B1B;
+    border-radius: 9999px; 
+}
+
+
+.content-block {
+    width: 100%; 
+    height: 225px; 
+    background: #D9D9D9; /* L'arrière-plan gris reste */
+    margin-top: 0; 
+    
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.main-image {
+    /* L'image doit prendre toute la largeur/hauteur du conteneur parent */
+    width: 100%; 
+    height: 100%; 
+    
+    object-fit: cover; 
+}
+
+
+
+.new-arrivals-section {
+    width: 100%;
+    padding: 40px; 
+    box-sizing: border-box; 
+}
+
+
+.section-title {
+    color: black;
+    font-size: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+}
+
+.cards-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.book-card {
+  
+    text-align: center;
+}
+
+.card-cover {
+    width: 80%; 
+    height: 418px;
+    background: #D9D9D9;
+    border-radius: 19px;
+    margin-bottom: 20px; 
+}
+
+
+.card-title {
+    color: black;
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
