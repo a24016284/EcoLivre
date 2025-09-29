@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Eco'Livre</title>
+    <title>EcoLivre</title>
     <link rel="stylesheet" href="livre.css">
 </head>
 <body>
@@ -14,9 +14,9 @@
 
         <nav class="nav-links">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="/Livr'Amu/livre.html">Livres</a></li>
-                <li><a href="#">À propos</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="livre.html">Livres</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
             </ul>
         </nav>
 
@@ -28,16 +28,16 @@
 
     <!-- Image principale -->
     <main class="content-block">
-        <img src="banniere.png" alt="Description de l'image de présentation" class="main-image">
+        <img src="LOGOv2.png" alt="Description de l'image de présentation" class="main-image">
     </main>
 
     <!-- Select + Search Bar -->
     <div class="filter-search-container">
         <select>
             <option value="">Catégories</option>
-            <option value="roman">Romans</option>
-            <option value="bd">BD</option>
-            <option value="essai">Essais</option>
+            <option value="roman">Droit</option>
+            <option value="bd">Philosophie</option>
+            <option value="essai">Informatique</option>
         </select>
 
         <div class="search-box">
@@ -46,115 +46,116 @@
         </div>
     </div>
 
-    <!-- Grille des livres -->
-    <div class="new-arrivals-section">
-        <div class="cards-container">
-            <!-- 20 cartes avec Titre et bouton discret -->
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
+<!-- Grille des livres -->
+<div class="new-arrivals-section">
+    <div class="cards-container">
+        <!-- 20 cartes avec Titre et image -->
+        <article class="book-card">
+            <div class="card-title-label">SQL pour les nuls</div>
+            <img src="livre-sql.jpg" alt="SQL pour les nuls" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
 
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
+        <article class="book-card">
+            <div class="card-title-label">Droit des obligations 2023</div>
+            <img src="livre_droit.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Philosophie le manuel</div>
+            <img src="livre_philo.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
 
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
 
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
 
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-            <article class="book-card">
-                <div class="card-title-label">Titre</div>
-                <div class="card-cover"></div>
-                <a href="#" class="card-button">Rechercher</a>
-            </article>
-        </div>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
+        <article class="book-card">
+            <div class="card-title-label">Titre</div>
+            <img src="livre-sql.jpg" alt="Livre" class="card-cover">
+            <a href="reservation.html" class="card-button">Reserver</a>
+        </article>
     </div>
+</div>
 </body>
 </html>

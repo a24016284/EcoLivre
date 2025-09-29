@@ -1,10 +1,10 @@
-
 body {
     margin: 0;
     padding: 0;
-    /* La police que nous avons importée en HTML */
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #ffffff; 
 }
+
 
 
 .navbar-container {
@@ -20,13 +20,13 @@ body {
 
 .navbar-background {
     position: absolute;
-    width: calc(100% - 42px); /* 100% moins la marge de chaque côté */
+    width: calc(100% - 42px);
     height: 60px;
     top: 20px;
     left: 21px;
-    background: #D9D9D9;
+    background: #CDEAFC;
     border-radius: 19px;
-    z-index: -1; /* Place le fond derrière les autres éléments (texte, liens) */
+    z-index: -1;
 }
 
 

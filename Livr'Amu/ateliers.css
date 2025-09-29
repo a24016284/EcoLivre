@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ffffff; 
+}
+
+
+
+.navbar-container {
+    width: 100%; /* S'étend sur toute la largeur de l'écran */
+    height: 100px;
+    position: relative;
+    display: flex; /* Active le Flexbox */
+    align-items: center; /* Centre verticalement les éléments enfants (logo, liens, etc.) */
+    justify-content: space-between; /* Écarte les groupes d'éléments (liens | logo | connexion) */
+    padding: 0 50px; /* Ajoute un espace sur les côtés pour que les éléments ne touchent pas le bord */
+    box-sizing: border-box; /* Assure que le padding est inclus dans le width/height */
+}
+
+.navbar-background {
+    position: absolute;
+    width: calc(100% - 42px);
+    height: 60px;
+    top: 20px;
+    left: 21px;
+    background: #CDEAFC;
+    border-radius: 19px;
+    z-index: -1;
+}
+
+
+.logo {
+    font-size: 45px;
+    font-weight: 400;
+    color: black;
+    margin: 0; /* Supprime la marge par défaut des h1 */
+    /* Pour le centrer au milieu de la nav grâce au Flexbox */
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links ul {
+    list-style: none; /* Supprime les points des listes */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Met les liens en ligne */
+    gap: 30px; /* Ajoute de l'espace entre les liens */
+    margin-right: 200px; /* Déplace le groupe de liens un peu plus à gauche pour ressembler à l'original */
+}
+
+.nav-links a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.user-area {
+    display: flex; /* Met Connexion et l'Avatar en ligne */
+    align-items: center;
+    gap: 20px; /* Espace entre le texte "Connexion" et l'avatar */
+}
+
+.login-link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.user-avatar {
+    width: 47px;
+    height: 44px;
+    background: #D61B1B;
+    border-radius: 9999px; 
+}
+
+/* Section Ateliers et Événements */
+
+
+.ateliers-section {
+    background-color: #009A74;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ateliers-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.atelier-item {
+    background-color: #CDEAFC;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.atelier-item h3 {
+    color: #0b0e6f;
+    margin-top: 0;
+}
+
+.atelier-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.atelier-item ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.evenements-section {
+    background-color: #1d594a;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+

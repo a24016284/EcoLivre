@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation de livre</title>
+  <link rel="stylesheet" href="reservation.css">
+</head>
+
+    <header class="navbar-container">
+        <div class="navbar-background"></div>
+
+        <h1 class="logo">EcoLivre</h1>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="livre.html">Livres</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-area">
+            <a href="#" class="login-link">Connexion</a>
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+
+<body>
+  <main class="reservation-container">
+    
+    <!-- Partie gauche : Image et titre -->
+    <section class="book-section">
+      <h1 class="book-title">Droit des obligations 2023</h1>
+      <img src="livre_droit.jpg" alt="Image du livre" class="book-image">
+    </section>
+    
+    <!-- Partie droite : Formulaire -->
+    <section class="form-section">
+      <h2>Réserver ce livre</h2>
+      <form id="reservationForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="mail">Email :</label>
+        <input type="email" id="mail" name="mail" required>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- JavaScript intégré -->
+  <script>
+    document.getElementById("reservationForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // empêche l'envoi classique du formulaire
+
+      let nom = document.getElementById("nom").value;
+      let prenom = document.getElementById("prenom").value;
+      let mail = document.getElementById("mail").value;
+
+      // mailto ouvre le client mail avec message prérempli
+      let subject = encodeURIComponent("Réservation de livre");
+      let body = encodeURIComponent(
+        "Bonjour,\n\nLe livre n°7 est réservé par :\n" +
+        "Nom : " + nom + "\n" +
+        "Prénom : " + prenom + "\n" +
+        "Email : " + mail + "\n\nMerci."
+      );
+      
+      window.location.href = "mailto:sofia.ach4@gmail.com?subject=" + subject + "&body=" + body;
+    });
+  </script>
+</body>
+</html>
