@@ -8,14 +8,14 @@ body {
 
 
 .navbar-container {
-    width: 100%; /* S'étend sur toute la largeur de l'écran */
+    width: 100%; 
     height: 100px;
     position: relative;
-    display: flex; /* Active le Flexbox */
-    align-items: center; /* Centre verticalement les éléments enfants (logo, liens, etc.) */
-    justify-content: space-between; /* Écarte les groupes d'éléments (liens | logo | connexion) */
-    padding: 0 50px; /* Ajoute un espace sur les côtés pour que les éléments ne touchent pas le bord */
-    box-sizing: border-box; /* Assure que le padding est inclus dans le width/height */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 50px; 
+    box-sizing: border-box; 
 }
 
 .navbar-background {
@@ -34,33 +34,32 @@ body {
     font-size: 45px;
     font-weight: 400;
     color: black;
-    margin: 0; /* Supprime la marge par défaut des h1 */
-    /* Pour le centrer au milieu de la nav grâce au Flexbox */
+    margin: 0;
     position: absolute; 
     left: 50%;
     transform: translateX(-50%);
 }
 
 .nav-links ul {
-    list-style: none; /* Supprime les points des listes */
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Met les liens en ligne */
-    gap: 30px; /* Ajoute de l'espace entre les liens */
-    margin-right: 200px; /* Déplace le groupe de liens un peu plus à gauche pour ressembler à l'original */
+    display: flex; 
+    gap: 30px; 
+    margin-right: 200px;
 }
 
 .nav-links a {
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    text-decoration: none; 
     color: black;
     font-size: 25px;
     font-weight: 400;
 }
 
 .user-area {
-    display: flex; /* Met Connexion et l'Avatar en ligne */
+    display: flex; 
     align-items: center;
-    gap: 20px; /* Espace entre le texte "Connexion" et l'avatar */
+    gap: 20px;
 }
 
 .login-link {
@@ -76,9 +75,6 @@ body {
     background: #D61B1B;
     border-radius: 9999px; 
 }
-
-/* Section Ateliers et Événements */
-
 
 .ateliers-section {
     background-color: #009A74;
